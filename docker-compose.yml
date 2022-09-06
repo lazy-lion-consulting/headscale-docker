@@ -1,0 +1,39 @@
+networks:
+  headscale:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+services:
+  headscale-db:
+    image: postgres
+    container_name: headscale-db
+    hostname: postgres.headscale
+    environment:
+      - POSTGRES_DB=headscale
+      - POSTGRES_USER=headuser
+      - POSTGRES_PASSWORD=headp@ss
+    volumes:
+      - $PWD/postgres-data:/var/lib/postgresql/data
+    networks:
+      headscale:
+        ipv4_address: 172.20.0.2
+    ports:
+      - '5432:5432'
+    restart: unless-stopped
+  headscale:
+    image: headscale/headscale
+    depends_on:
+      - headscale-db
+    container_name: headscale
+    hostname: headscale
+    volumes:
+      - $PWD/config:/etc/headscale
+      - $PWD/keys:/root/keys
+    networks:
+      headscale:
+        ipv4_address: 172.20.0.3
+    ports:
+      - '8080:8080'
+      - '9090:9090'
+    restart: unless-stopped
+    command: "headscale serve"
