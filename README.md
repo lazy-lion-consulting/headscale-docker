@@ -6,7 +6,9 @@ This project space to host `headscale`. An open source alternative to tailscale.
 
 # Source project
 
-[headscale_readme](https://github.com/juanfont/headscale/blob/main/docs/running-headscale-container.md)
+[Master Headscale Project](https://github.com/juanfont/headscale)
+
+[Official How To - Docker Guide](https://github.com/juanfont/headscale/blob/main/docs/running-headscale-container.md)
 
 # Usage
 
@@ -39,3 +41,7 @@ sudo rm -rf postgres-data/.gitignore
 ```bash
 docker-compose up -d
 ```
+
+## Headscale - Usage
+
+[Official Headscale Guide](https://github.com/juanfont/headscale/blob/main/docs/running-headscale-container.md#register-a-machine-normal-login)
