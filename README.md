@@ -10,15 +10,15 @@ This project space to host `headscale`. An open source alternative to tailscale.
 
 [Official How To - Docker Guide](https://github.com/juanfont/headscale/blob/main/docs/running-headscale-container.md)
 
-# Usage
+# How to use this project
 
-## Get the latest build
+## Pull latest version
 
 ```bash
 git pull ssh://git@devops.iohub.cloud:10022/richard/oxide-tailscale-server.git
 ```
 
-## Options
+## Configure Optional settings
 
 ### DB username & password
 
@@ -29,19 +29,25 @@ Edit these settings in the following two file (to be the same)
 ./docker-compose.yml
 ```
 
-## Update permissions
+## Update file permissions
 
 ```bash
 sudo chown [docker-user]:[docker-group] postgres-data
 sudo rm -rf postgres-data/.gitignore
 ```
 
-## Deploy
+## Start up services
 
 ```bash
 docker-compose up -d
 ```
 
-## Headscale - Usage
+## Check that services are online
+
+```bash
+curl http://localhost:9090/metrics
+```
+
+## Follow the official guide for registration & usage
 
 [Official Headscale Guide](https://github.com/juanfont/headscale/blob/main/docs/running-headscale-container.md#register-a-machine-normal-login)
