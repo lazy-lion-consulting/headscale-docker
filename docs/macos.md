@@ -27,7 +27,7 @@ Install the custom profile for the headscale server
 2. Go to `System Preferences`->`Profiles` and you should see it there
 3. Click the `Install` button
 
-### Step 3 - Start Tailscale (macos)
+### Step 3 - Start Tailscale client (macos)
 
 Start the official Tailscale app
 `CMD+Spacebar` and type `Tailscale`, then hit enter
@@ -54,4 +54,26 @@ Run the following command in a terminal session
 
 Removing the custom Headscale server from the Tailscale client
 
-### Step 1 - ToDo
+### Step 1 - Log out (macos)
+
+Log out from the Headscale server and close the Tailscale client
+
+1. Select tailscale helper icon in taskbar thingy (top right), select the Headscale server name and select log out
+2. Close the Tailscale client
+
+### Step 2 - Remove profile (macos)
+
+Remove the custom profile for the headscale server
+
+1. Go to `System Preferences`->`Profiles` and you should see it there
+2. Click the `-` button on that profile to remove it
+
+### Step 3 - Start Tailscale client
+
+Start the official Tailscale app
+`CMD+Spacebar` and type `Tailscale`, then hit enter
+
+### Step 4 - Log in
+
+1. Select tailscale helper icon in taskbar thingy (top right), select `Log in`
+2. Log in with normal process
