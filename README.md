@@ -48,6 +48,11 @@ docker-compose up -d
 curl http://localhost:9090/metrics
 ```
 
-## Follow the official guide for registration & usage
+# Tailscale Client Usage
+
+1. [Linux Guide](https://devops.iohub.cloud/richard/oxide-tailscale-server/-/blob/main/docs/linux.md)
+2. [MacOS Guide](https://devops.iohub.cloud/richard/oxide-tailscale-server/-/blob/main/docs/macos.md)
+3. *ToDo*
+4. Follow the official guide for registration & usage
 
 [Official Headscale Guide](https://github.com/juanfont/headscale/blob/main/docs/running-headscale-container.md#register-a-machine-normal-login)
