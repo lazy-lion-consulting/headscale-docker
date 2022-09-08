@@ -9,6 +9,8 @@
 
 ## Installation
 
+Attaching the Tailscale client to a Headscale server
+
 ### Step 1 - Download profile (web browser)
 
 Download a custom profile from the headscale server
@@ -49,5 +51,7 @@ Run the following command in a terminal session
 ```
 
 ## Removal
+
+Removing the custom Headscale server from the Tailscale client
 
 ### Step 1 - ToDo

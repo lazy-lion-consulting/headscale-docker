@@ -9,6 +9,8 @@
 
 ## Installation
 
+Attaching the Tailscale client to a Headscale server
+
 ### Step 1 - Generate an Auth key (headscale docker host)
 
 Run the following command for each mac to connect to your namespace
@@ -29,4 +31,16 @@ tailscale up --login-server http://docker.za.cloudlet.cloud:8080 --authkey 23a6c
 
 ## Removal
 
-## Step 1
+Removing the custom Headscale server from the Tailscale client
+
+### Step 1 - Log out
+
+```bash
+tailscale logout
+```
+
+### Step 2 - Reset & Log In
+
+```bash
+tailscale up --reset
+```
