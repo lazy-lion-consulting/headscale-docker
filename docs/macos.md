@@ -8,7 +8,7 @@
 ## Step 1 - Download profile (web browser)
 Download a custom profile from the headscale server
 1. Go to *URL_OF_HEADSCALE:PORT*/apple
-    e.g. (http://docker.za.cloudlet.cloud:8080/apple)[http://docker.za.cloudlet.cloud:8080/apple]
+    e.g. [http://docker.za.cloudlet.cloud:8080/apple](http://docker.za.cloudlet.cloud:8080/apple)
 2. Click the profile download hyperlink and save to a known location
 
 ## Step 2 - Install profile (macos)
