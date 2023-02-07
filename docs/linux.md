@@ -16,7 +16,10 @@ Attaching the Tailscale client to a Headscale server
 Run the following command for each mac to connect to your namespace
 
 ```bash
+# Older version
 docker exec headscale headscale --namespace <TAILSCALE_NAMESPACE> preauthkeys create --reusable --expiration 24h
+# Newer version
+docker exec headscale headscale --user <TAILSCALE_NAMESPACE> preauthkeys create --reusable --expiration 24h
 ```
 
 ### Step 2 - Log linux client into Headscale server (terminal)
